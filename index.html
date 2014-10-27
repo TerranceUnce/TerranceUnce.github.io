@@ -1,0 +1,512 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale = 1.0, user-scalable = no">
+	<title>Terrance Unce Info</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+	<link href="css/prettyPhoto.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="css/grid.css" type="text/css" media="screen">
+	
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800' rel='stylesheet' type='text/css'>
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+	<script src="js/jquery.sticky.js"></script>
+	<script type="text/javascript" src="js/js.js"></script>
+	<script type="text/javascript" src="js/jquery.stellar.min.js"></script>
+	<script type="text/javascript" src="js/waypoints.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
+	
+	<!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+		<script src="js/respond.src.js"></script>
+	<![endif]-->
+	
+	<script type="text/javascript">
+		$(document).ready(function(){	
+			$("#ajax-contact-form").submit(function() {
+				var str = $(this).serialize();		
+				$.ajax({
+					type: "POST",
+					url: "contact_form/contact_process.php",
+					data: str,
+					success: function(msg) {
+						// Message Sent - Show the 'Thank You' message and hide the form
+						if(msg == 'OK') {
+							result = '<div class="notification_ok">Your message has been sent. Thank you!</div>';
+							$("#fields").hide();
+						} else {
+							result = msg;
+						}
+						$('#note').html(result);
+					}
+				});
+				return false;
+			});
+
+		});		
+	</script>
+	
+</head>
+
+<body>
+
+
+<div class="slide" id="slide1" data-slide="1" data-stellar-background-ratio="0.5">
+	<div class="effect_2">
+		<div class="container clearfix">
+
+			<div id="content" class="grid_12">
+				<div class="filtr_bg">
+					<span>Hello!</span>
+					<div class="slogan">
+						<div class="left_bord"></div>
+						<div class="slogan_text">I AM</div>
+						<div class="right_bord"></div>
+					</div>
+					<h1>Terrance Unce</h1>
+					<a class="button" title="" data-slide="2"></a>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<div class="inset_shadow"></div>
+	</div>
+</div>
+
+
+<div class="menu">	
+	<div class="container clearfix">
+		
+		<div id="nav">
+			<a class="btn_dropdown" data-toggle="collapse" data-target=".nav-collapse_">MENU</a>
+			<ul class="navigation">
+				<li data-slide="2">Info</li>
+                <li data-slide="8">Resume</li>
+				<!--<li data-slide="4">Services</li>
+				<li data-slide="6">EXHIBITIONS</li>-->
+				<li data-slide="10">Portfolio</li>
+				<li data-slide="12">Contact</li>
+				<div class="clear"></div>
+			</ul>
+		</div>
+	
+	</div>
+</div>
+
+
+<div class="slide" id="slide2" data-slide="2" data-stellar-background-ratio="0.5">
+	<div class="container clearfix">
+		
+		<div id="content" class="grid_12">
+			<h2><span>Info</span></h2>
+		</div>
+		<div class="clear"></div>
+		
+		<div id="content">
+			<div class="grid_6">
+				<h4>Who Am I?</h4>
+                <p>That's actually a loaded question. I'm still working on the definitive answer. What I do know is that I am completley caught up in the web! I love developing new and fresh ideas. It’s neat to see something that started from nothing grow into the perfect solution. I want to learn as much as I possibly can.  I embrace any opportunity to add a new skill in my developer toolbox.  I am a front-end web developer located in Central Texas and I develop web solutions.  Currently I develop websites full time for <a href="http://www.bancvue.com/about/bancvue.html" target="_blank">BancVue</a>.  <i>(Do you <a href="https://www.kasasa.com/" target="_blank">Kasasa</a>?)</i>
+    </p>
+
+<p>I am more than just a web developer though! I am a proud father and little league football coach...Go Dream Team Cougars! I live in Austin, so it's needless to say I love music...live music especially. Even though I don't step out as much as I used to, I'm definitely no stranger to the night life. I work hard, so I pla...well, you know the rest. (more <span style="font-style:italic;">info</span> about me.......I don't really like clichés.)</p>
+			</div>
+			<div class="grid_6 omega">
+				<h4>Personal Info</h4>
+				<ul class="pers_inf">
+					<!--<li><span>Date of birth</span>August 24, 1976</li>-->
+					<li><span>Location</span>Austin, TX</li>
+					<li><span>Email</span><a href="mailto:terranceunce@gmail.com">terranceunce@gmail.com</a></li>
+					<!--<li><span>Phone</span>(+1) 245 5462 252</li>-->
+					<li><span>Connect</span>
+                    	<ul>
+                        	<li><a href="http://www.linkedin.com/profile/view?id=63136355&trk=nav_responsive_tab_profile" target="_blank" title="LinkedIn">&nbsp;</a></li>
+                        	<li><a href="https://plus.google.com/110063136035141741931/posts" target="_blank" title="Google+">&nbsp;</a></li>
+                        	<li><a href="https://twitter.com/terrance_unce" target="_blank" title="Twitter">&nbsp;</a></li>
+                        </ul>                  	
+                    	<!--<a href="http://holeintheroof.com/team-terrance-unce" target="_blank" title="Hole in the Roof Marketing" data-htr="htr">&nbsp;</a>-->                    
+                    </li>
+				</ul>
+                <img src="images/maybe.png" alt="me" />
+			</div>
+			<div class="clear"></div>
+			
+		</div>
+		
+	</div>
+</div>
+
+
+
+
+<div class="slide" id="slide8" data-slide="8" data-stellar-background-ratio="0.5">
+	<div class="container clearfix">
+		
+		<div id="content" class="grid_12">
+			<h2><span>Resume</span></h2>
+		</div>
+		<div class="clear"></div>
+		
+		<div id="content">
+			<div class="grid_12">
+                <div class="myresume"><a href="files/terranceUNCE.pdf" target="_blank" title="My Resume">Click here for a PDF version of my resume.</a></div>
+					<div class="ac_lineheight"></div>
+					<div class="ac_lineheight"></div>
+					<div class="ac_lineheight"></div>
+				<h4>Experience</h4>
+				<div class="accordion">
+					<h3>
+						<div class="ac_date">eventually</div>
+						<div class="ac_plmin"></div>
+						<span>Web Developer Extraordinaire</span>
+					</h3>
+					<div class="accord_cont">
+						<div class="vert_line"></div>
+						<p class="ac_title">Front-End Guru</p>
+						<p>When it's all said and done, I want to be a dependable, trustworthy source of knowledge for the web community.  I'd like to contribute open source web solutions to help the web maintain it's upward progression.  I'd like for people to mention me as a "must follow" for their twitter and rss feeds.  After many years of training, I'll one day be ready to fully flex my front-end web muscles for the world to see (and show them my back-end looks pretty good too)!</p>
+						<!--<a class="ac_more" href="javascript:void(0);">View website</a>-->
+					</div>
+					<div class="ac_lineheight"></div>
+					<h3>
+						<div class="ac_date">next</div>
+						<div class="ac_plmin"></div>
+						<span><div class="strike">Jr.</div> Web Developer</span>
+					</h3>
+					<div class="accord_cont">
+						<div class="vert_line"></div>
+						<p class="ac_title">A "Jr." No More!</p>
+						<p>My immediate goal is to be comfortable with advanced concepts in Web Development.  I want to be able to build complex web applications from start to finish with little to no help and fill my currently non-existent GitHub account with meaningful repositories.  Once I reach this point in my career I'll be able to effectively lead a team of other competent developers.</p>
+						<!--<a class="ac_more" href="javascript:void(0);">View website</a>-->
+					</div>
+					<div class="ac_lineheight"></div>
+					<h3>
+						<div class="ac_date">2012 - now</div>
+						<div class="ac_plmin"></div>
+						<span>Jr. Web Developer</span>
+					</h3>
+					<div class="accord_cont">
+						<div class="vert_line"></div>
+                        <p class="ac_title"><a href="http://www.bancvue.com/about/bancvue.html" target="_blank" title="Visit the site.">BancVue</a></p>
+						<ul>
+                        	<li>Deliver finished sites that can pass a strict QA checklist with minimal revisions.</li>
+                        	<li>Problem-solve and fix performance glitches across any browser.</li>
+                        	<li>Stay current with technology trends and continually advance my coding expertise.</li>
+                        </ul>
+						<p class="ac_title"><a href="http://holeintheroof.com" target="_blank" title="Visit the site.">Hole in the Roof Marketing</a></p>
+						<ul>
+                        	<li>PSD to HTML/CSS/JavaScript for new websites</li>
+                        	<li>Maintenance and troubleshooting for existing websites</li>
+                        	<li>Secondary/Level-2 page design and content structure</li>
+                        </ul>
+						<!--<a class="ac_more" href="javascript:void(0);">View website</a>-->
+					</div>
+					<div class="ac_lineheight"></div>
+					<h3>
+						<div class="ac_date">2010 - 2012</div>
+						<div class="ac_plmin"></div>
+						<span>Student</span>
+					</h3>
+					<div class="accord_cont">
+						<div class="vert_line"></div>
+						<p class="ac_title"><a href="http://www.waco.tstc.edu/programs/waco/webdesign-av" target="_blank" title="Visit the site.">Texas State Technical College</a></p>
+						<p>A.A.S. Web Development and Design (3.6 GPA)</p>
+                        <p>Courses include:</p>
+                        <ul>
+                        	<li>HTML5/CSS3</li>
+                            <li>JavaScript</li>
+                            <li>PHP/MySQL</li>
+                            <li>Mobile Web and Responsive Design</li>
+                        </ul>
+						<!--<a class="ac_more" href="javascript:void(0);">View website</a>-->
+					</div>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+	
+	</div>
+</div>
+
+
+<!--
+<div class="slide" id="slide4" data-slide="4" data-stellar-background-ratio="0.5">
+	<div class="container clearfix">
+		
+		<div id="content" class="grid_12">
+			<h2><span>Services</span></h2>
+		</div>
+		<div class="clear"></div>
+		
+		<div id="content">
+			<div class="grid_6">
+				<a class="servc_block" href="javascript:void(0);" alt="">
+					<span></span>
+					<div class="icon1"></div>
+					<p>HTML</p>
+					<div class="clear"></div>
+					Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus tempor ipsum vel sapien mattis consequat. Etiam pharetra vestibulum urna sed adipiscing. Duis ornare
+				</a>
+			</div>
+			<div class="grid_6 omega">
+				<a class="servc_block" href="javascript:void(0);" alt="">
+					<span></span>
+					<div class="icon2"></div>
+					<p>CSS</p>
+					<div class="clear"></div>
+					Duis porttitor neque quis lectus gravida ut scelerisque lacus adipiscing. In malesuada pretium ante mattis consectetur. Phasellus adipiscing augue nec ipsum interdum molestie. Nulla facilisi. Ut in augue et
+				</a>
+			</div>
+			<div class="grid_6">
+				<a class="servc_block" href="javascript:void(0);" alt="">
+					<span></span>
+					<div class="icon3"></div>
+					<p>JavaScript</p>
+					<div class="clear"></div>
+					Proin elementum, lacus vitae consectetur pellentesque, dolor nisi euismod velit, ac placerat metus arcu sit amet lectus. Curabitur eu fermentum lorem. Nulla adipiscing pulvinar risus, nec malesuada mauris
+				</a>
+			</div>
+			<div class="grid_6 omega">
+				<a class="servc_block" href="javascript:void(0);" alt="">
+					<span></span>
+					<div class="icon4"></div>
+					<p>PHP</p>
+					<div class="clear"></div>
+					Aliquam erat volutpat. Donec interdum blandit metus, et tincidunt augue ultrices sit amet. Quisque pulvinar libero dictum erat aliquet venenatis. Sed vel eleifend mauris. Curabitur tempus magna eu elit fringilla
+				</a>
+			</div>
+			
+			<div class="clear"></div>
+			
+		</div>
+		
+	</div>
+</div>
+
+-->
+
+<!--
+<div class="slide" id="slide6" data-slide="6" data-stellar-background-ratio="0.5">
+	<div class="container clearfix">
+		
+		<div id="content" class="grid_12">
+			<h2><span>EXHIBITIONS</span></h2>
+		</div>
+		<div class="clear"></div>
+		
+		<div id="content">
+			<div class="grid_12">
+				<div class="accordion">
+					<h3>
+						<div class="ac_date">2012</div>
+						<div class="ac_plmin"></div>
+						<span>“Vestibulum euismod ”, Columbus College of Art and Design, Columbus, Ohio</span>
+					</h3>
+					<div class="accord_cont">
+						<div class="vert_line"></div>
+						<p class="ac_title">Lorem ipsum dolor sit amet</p>
+						<p>Donec in vehicula augue. Sed et nisi sem, at semper dolor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris ut urna nibh, a semper neque. Mauris ultrices tempus nisi, et porttitor nulla varius a. Ut turpis magna, feugiat quis ultrices tristique, rhoncus eu leo. In eu quam lacus. Praesent</p>
+						<a class="ac_more" href="javascript:void(0);">View website</a>
+					</div>
+					<div class="ac_lineheight"></div>
+					<h3>
+						<div class="ac_date">2010</div>
+						<div class="ac_plmin"></div>
+						<span>“TEtiam nunc tortor”, Junction View Studios, Columbus, Ohio</span>
+					</h3>
+					<div class="accord_cont">
+						<div class="vert_line"></div>
+						<p class="ac_title">Lorem ipsum dolor sit amet</p>
+						<p>Cras mi ligula, tempor quis ornare in, eleifend eget urna. Praesent luctus tempor mi, in condimentum turpis semper scelerisque. Phasellus mollis placerat dolor sit amet molestie. Praesent pellentesque, erat in volutpat aliquam, diam nibh placerat massa, nec facilisis diam risus in felis. Donec nulla quam, semper sed vulputate vel, luctus nec lorem.</p>
+						<a class="ac_more" href="javascript:void(0);">View website</a>
+					</div>
+					<div class="ac_lineheight"></div>
+					<h3>
+						<div class="ac_date">2009</div>
+						<div class="ac_plmin"></div>
+						<span>“Etiam gravida convallis, Columbus College of Art and Design, Columbus, Ohio</span>
+					</h3>
+					<div class="accord_cont">
+						<div class="vert_line"></div>
+						<p class="ac_title">Lorem ipsum dolor sit amet</p>
+						<p>Donec in vehicula augue. Sed et nisi sem, at semper dolor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris ut urna nibh, a semper neque. Mauris ultrices tempus nisi, et porttitor nulla varius a. Ut turpis magna, feugiat quis ultrices tristique, rhoncus eu leo. In eu quam lacus. Praesent</p>
+						<a class="ac_more" href="javascript:void(0);">View website</a>
+					</div>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		
+	</div>
+</div>
+-->
+
+
+
+<div class="slide" id="slide10" data-slide="10" data-stellar-background-ratio="0.5">
+	<div class="container clearfix">
+		
+		<div id="content" class="grid_12">
+			<h2><span>Portfolio</span></h2>
+		</div>
+		<div class="clear"></div>
+		
+		<div id="contenet">
+			<div class="overflow_hidden">
+				<!-- portfolio_block -->
+				<div class="gallery-list">
+					<div class="img_block">
+						<div class="hover_img one">
+							<img class="portf_img" src="images/portfolio/habitat.jpg" alt="" />
+							<span class="portfolio_zoom"><a href="images/portfolio/full/habitat.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+							<!--<span class="portfolio_link"><a href="javascript:void(0);">View item</a></span>-->
+						</div>
+					</div>
+					<div class="img_block">
+						<div class="hover_img two">
+							<img class="portf_img" src="images/portfolio/blackhill.jpg" alt="" />
+							<span class="portfolio_zoom"><a href="images/portfolio/full/blackhill.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+							<!--<span class="portfolio_link"><a href="javascript:void(0);">View item</a></span>-->
+						</div>
+					</div>
+					<div class="img_block">
+						<div class="hover_img three">
+							<img class="portf_img" src="images/portfolio/smokehouse.jpg" alt="" />
+							<span class="portfolio_zoom"><a href="images/portfolio/full/smokehouse.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+							<!--<span class="portfolio_link"><a href="javascript:void(0);">View item</a></span>-->
+						</div>
+					</div>
+					<div class="img_block  ">
+						<div class="hover_img four">
+							<img class="portf_img" src="images/portfolio/customheard.jpg" alt="" />
+							<span class="portfolio_zoom"><a href="images/portfolio/full/customheard.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+							<!--<span class="portfolio_link"><a href="javascript:void(0);">View item</a></span>-->
+						</div>
+					</div>
+					<div class="img_block">
+						<div class="hover_img five">
+							<img class="portf_img" src="images/portfolio/firebreathers.jpg" alt="" />
+							<span class="portfolio_zoom"><a href="images/portfolio/full/firebreathers.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+							<!--<span class="portfolio_link"><a href="javascript:void(0);">View item</a></span>-->
+						</div>
+					</div>
+					<div class="img_block">
+						<div class="hover_img six">
+							<img class="portf_img" src="images/portfolio/chaparral.jpg" alt="" />
+							<span class="portfolio_zoom"><a href="images/portfolio/full/chaparral.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+							<!--<span class="portfolio_link"><a href="javascript:void(0);">View item</a></span>-->
+						</div>
+					</div>
+					<div class="img_block">
+						<div class="hover_img seven">
+							<img class="portf_img" src="images/portfolio/livewire.jpg" alt="" />
+							<span class="portfolio_zoom"><a href="images/portfolio/full/livewire.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+							<!--<span class="portfolio_link"><a href="javascript:void(0);">View item</a></span>-->
+						</div>
+					</div>
+					<div class="img_block  ">
+						<div class="hover_img eight">
+							<img class="portf_img" src="images/portfolio/centra.jpg" alt="" />
+							<span class="portfolio_zoom"><a href="images/portfolio/full/centra.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+							<!--<span class="portfolio_link"><a href="javascript:void(0);">View item</a></span>-->
+						</div>
+					</div>
+					<div class="img_block">
+						<div class="hover_img nine">
+							<img class="portf_img" src="images/portfolio/kkg.jpg" alt="" />
+							<span class="portfolio_zoom"><a href="images/portfolio/full/kkg.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+							<!--<span class="portfolio_link"><a href="javascript:void(0);">View item</a></span>-->
+						</div>
+					</div>
+					<div class="img_block">
+						<div class="hover_img ten">
+							<img class="portf_img" src="images/portfolio/bkbbds.jpg" alt="" />
+							<span class="portfolio_zoom"><a href="images/portfolio/full/bkbbds.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+							<!--<span class="portfolio_link"><a href="javascript:void(0);">View item</a></span>-->
+						</div>
+					</div>
+					<div class="img_block">
+						<div class="hover_img eleven">
+							<img class="portf_img" src="images/portfolio/accbr.jpg" alt="" />
+							<span class="portfolio_zoom"><a href="images/portfolio/full/accbr.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+							<!--<span class="portfolio_link"><a href="javascript:void(0);">View item</a></span>-->
+						</div>
+					</div>
+					<div class="img_block  ">
+						<div class="hover_img twelve">
+							<img class="portf_img" src="images/portfolio/arc.jpg" alt="" />
+							<span class="portfolio_zoom"><a href="images/portfolio/full/arc.jpg" rel="prettyPhoto[portfolio1]"></a></span>
+							<!--<span class="portfolio_link"><a href="javascript:void(0);">View item</a></span>-->
+						</div>
+					</div>
+					
+					<div class="clear"></div>
+				</div>   
+				<!-- //portfolio_block -->   
+			</div>
+		</div>
+	
+	</div>
+</div>
+
+
+
+<div class="slide" id="slide12" data-slide="12" data-stellar-background-ratio="0.5">
+	<div class="container clearfix">
+		
+		<div id="content" class="grid_12">
+			<h2>Contact</h2>
+		</div>
+		<div class="clear"></div>
+		
+		<div class="grid_12">
+			<p>If you'd like to stay connected with someone passionate about the web and web standards then I'm your guy. The best way to contact me is by <a href="mailto:terranceunce@gmail.com" title="Send me an eamil.">email</a>, but I'm also available on Twitter, Google+ or Linkedin. To get to my profiles, check out my <a href="https://about.me/terranceunce" target="_blank" title="About.me">about.me</a> profile or jump back up to the <a href="#slide2" class="info">info</a> section. If you have a question or want to know more, just fill out the quick and simple form below.</p>   
+            <p>So now you know how to find me. The question is will you?</p>
+			<div class="contact_form">  
+				<div id="note"></div>
+				<div id="fields">
+					<form id="ajax-contact-form" action="">
+						<div class="grid_6"><input type="text" name="name" value="" placeholder="Name" /></div>
+						<!-- <input type="text" name="subject" value="" placeholder="Phone" /> -->
+						<div class="grid_6 omega"><input type="text" name="email" value="" placeholder="Email" /></div>
+						
+						<div class="clear"></div>
+						
+						<div class="grid_12"><textarea name="message" id="message" placeholder="Message"></textarea></div>
+						<div class="clear"></div>
+						<input type="reset" class="contact_btn" value="Clear Form" />
+						<input type="submit" class="contact_btn send_btn" value="Send" />
+						<div class="clear"></div>
+					</form>
+				</div>
+			</div>
+		</div>		
+		<div class="clear"></div>
+
+	</div>
+	
+	<!--<div id="map_block"><iframe width="100%" height="722" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=los+angeles&amp;aq=&amp;sll=37.0625,-95.677068&amp;sspn=53.080379,114.169922&amp;ie=UTF8&amp;hq=&amp;hnear=Los+Angeles,+California&amp;ll=34.052234,-118.243685&amp;spn=0.003427,0.006968&amp;t=m&amp;z=14&amp;output=embed"></iframe></div>-->
+	
+</div>
+
+
+
+
+<div id="footer">
+	<div class="container clearfix">
+		<div class="copyright">&copy; Terrance Unce 2014 | All Rights Reserved</div>
+		<div id="back_top"><a class="button" title="" data-slide="1"></a></div>
+	</div>
+</div>
+
+
+</body>
+</html>
+
+
+
+
+
+
