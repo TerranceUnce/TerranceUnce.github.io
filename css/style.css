@@ -307,7 +307,7 @@ img.icon_img {
 }
 
 /* ________________________ personal_info _________________________ */
-.pers_inf {width: 90%;margin-top:-8px;
+.pers_inf {width: 100%;margin-top:-8px;
 }
 .pers_inf > li {
 	margin-bottom:2px;
@@ -581,8 +581,13 @@ img.icon_img {
 	color:#f6a14d;
 	padding-bottom: 5px;
 }
+.ac_title > a { text-decoration: underline; }
 .ac_title + ul {
 	padding-bottom: 15px;
+    padding-left: 20px
+}
+.ac_title + ul li {
+    list-style: disc;
 }
 .ac_more {color:#f6a14d;
 }
@@ -816,9 +821,12 @@ img.icon_img {
 	padding:86px 0 0;
 }
 
-#slide12 .container {margin-bottom:80px;
-}
-#slide12 p {color:#656565;
+#slide12 .container { margin-bottom:80px; }
+#slide12 p,
+#slide12 a { color:#656565 !important; }
+#slide12 p a {
+    text-decoration: underline;
+    text-decoration-color: #000;
 }
 
 
